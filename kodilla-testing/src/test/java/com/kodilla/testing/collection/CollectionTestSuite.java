@@ -37,11 +37,8 @@ public class CollectionTestSuite {
     @Test
     void testOddNumbersExterminatorNormalList(){
         //Given
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
+        Integer[] array = {1,2,3,4};
+        List<Integer> list = Arrays.asList(array);
         //When
         List<Integer> evenList = new ArrayList<>();
         List<Integer> compareList = new ArrayList<>();
