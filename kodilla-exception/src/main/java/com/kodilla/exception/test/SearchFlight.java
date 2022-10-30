@@ -15,13 +15,13 @@ public class SearchFlight {
         airports.put("Moscow", false);
         airports.put("Madrid", true);
 
-        if (airports.keySet().contains(flight.getDepartureAirport())
-                && airports.keySet().contains(flight.getArrivalAirport())){
-            if(airports.get(flight.getDepartureAirport()) && airports.get(flight.getDepartureAirport())){
+        if (airports.containsKey(flight.getDepartureAirport())
+                && airports.containsKey(flight.getArrivalAirport())){
+            if(airports.get(flight.getDepartureAirport()) && airports.get(flight.getArrivalAirport())){
                 System.out.println("Flight from: " + flight.getDepartureAirport() +
                         " to: " + flight.getArrivalAirport() + " exists.");
             } else {
-                System.out.println("Flights with given parameters are NOT available at the moment.");
+                System.out.println("Flight with given parameters is NOT available at the moment.");
             }
         } else {
             throw new RouteNotFoundException("Given flight does NOT exists!");
