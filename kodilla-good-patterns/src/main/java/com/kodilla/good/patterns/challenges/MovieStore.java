@@ -9,8 +9,7 @@ public class MovieStore {
     }
 
     public static void printTitles(){
-        getMovies().entrySet().stream()
-                .map(Map.Entry::getValue)
+        getMovies().values().stream()
                 .flatMap(Collection::stream)
                 .map(s -> s + " ! ")
                 .forEach(System.out::print);
