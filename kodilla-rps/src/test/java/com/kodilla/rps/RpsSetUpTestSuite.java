@@ -9,7 +9,7 @@ public class RpsSetUpTestSuite {
         //given
         RpsSetUp rpsSetUp = new RpsSetUp();
 
-        //when
+        //when & then
 
     }
 }
