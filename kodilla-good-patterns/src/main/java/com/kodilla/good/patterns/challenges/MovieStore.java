@@ -7,10 +7,10 @@ import static java.util.stream.Collectors.joining;
 public class MovieStore {
 
     public static void main(String[] args) {
-        System.out.println(printTitles());
+        System.out.println(getAllTitles());
     }
 
-    private static String printTitles(){
+    private static String getAllTitles(){
         return getMovies().values().stream()
                 .flatMap(Collection::stream)
                 .collect(joining("!"));
