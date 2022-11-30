@@ -2,20 +2,21 @@ package com.kodilla.good.patterns.challenges;
 
 import java.util.*;
 
+import static java.util.stream.Collectors.joining;
+
 public class MovieStore {
 
     public static void main(String[] args) {
-        printTitles();
+        System.out.println(printTitles());
     }
 
-    public static void printTitles(){
-        getMovies().values().stream()
+    private static String printTitles(){
+        return getMovies().values().stream()
                 .flatMap(Collection::stream)
-                .map(s -> s + " ! ")
-                .forEach(System.out::print);
+                .collect(joining("!"));
     }
 
-    public static Map<String, List<String>> getMovies(){
+    private static Map<String, List<String>> getMovies(){
         List<String> ironManTranslations = new ArrayList<>();
         ironManTranslations.add("Żelazny Człowiek");
         ironManTranslations.add("Iron Man");
