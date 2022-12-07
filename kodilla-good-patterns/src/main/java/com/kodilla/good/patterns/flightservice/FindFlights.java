@@ -22,12 +22,12 @@ public class FindFlights {
                 .collect(Collectors.toList());
     }
 
-    public ArrayList<Journey> getFlightsFromTo(String departureCity, String arrivalCity ){
+    public List<Journey> getFlightsFromTo(String departureCity, String arrivalCity ){
         System.out.println("\ninterchange flight");
 
         List<Flight> starting = getFlightsFromCity(departureCity);
         List<Flight> ending = getFlightsToCity(arrivalCity);
-        ArrayList<Journey> results = new ArrayList<Journey>();
+        List<Journey> results = new ArrayList<Journey>();
 
         for (Flight first : starting){
             for (Flight second : ending){
