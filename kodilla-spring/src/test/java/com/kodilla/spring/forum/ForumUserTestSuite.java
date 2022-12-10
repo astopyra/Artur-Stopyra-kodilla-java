@@ -1,4 +1,4 @@
-package com.example.kodillaspring;
+package com.kodilla.spring.forum;
 
 import com.kodilla.spring.forum.ForumUser;
 import org.junit.jupiter.api.Test;
