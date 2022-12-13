@@ -24,7 +24,6 @@ public class BoardTestSuite {
         board.doneList.addTask("read a message");
         board.inProgressList.addTask("write a letter");
 
-
         //then
         System.out.println("****************************************************");
         System.out.println(board.doneList.toString());
