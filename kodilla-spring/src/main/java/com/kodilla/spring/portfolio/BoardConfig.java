@@ -6,23 +6,23 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BoardConfig {
 
-    @Bean(name = "toDoList")
+    @Bean
     public TaskList getToDoList(){
         return new TaskList();
     }
 
-    @Bean(name = "inProgressList")
+    @Bean
     public TaskList getInProgressList(){
         return new TaskList();
     }
 
-    @Bean(name = "doneList")
+    @Bean
     public TaskList getDoneList(){
         return new TaskList();
     }
 
     @Bean(name = "board")
     public Board getBoard(){
-        return new Board();
+        return new Board(getToDoList(), getInProgressList(), getDoneList());
     }
 }
