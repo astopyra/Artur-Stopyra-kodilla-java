@@ -1,5 +1,8 @@
 package com.kodilla.patterns.prototype;
 
+import com.kodilla.patterns.strategy.prototype.Board;
+import com.kodilla.patterns.strategy.prototype.Task;
+import com.kodilla.patterns.strategy.prototype.TasksList;
 import org.junit.jupiter.api.Test;
 import java.util.stream.IntStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,5 +1,7 @@
 package com.kodilla.patterns.prototype.library;
 
+import com.kodilla.patterns.strategy.prototype.library.Book;
+import com.kodilla.patterns.strategy.prototype.library.Library;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

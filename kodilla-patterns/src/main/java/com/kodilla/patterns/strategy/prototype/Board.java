@@ -1,4 +1,4 @@
-package com.kodilla.patterns.prototype;
+package com.kodilla.patterns.strategy.prototype;
 
 import java.util.HashSet;
 import java.util.Objects;
