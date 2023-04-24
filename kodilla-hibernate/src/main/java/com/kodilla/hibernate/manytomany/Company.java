@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedQuery(name = "Company.retrieveCompanyByName",
+            query = "FROM Company WHERE name LIKE :ARG")
 @NamedNativeQuery(
         name = "Company.retrieveCompaniesNameBegins",
         query = "SELECT * FROM COMPANIES WHERE LEFT(COMPANY_NAME, 3) = :FIRST_3_LETTERS",
